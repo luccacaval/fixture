@@ -1,0 +1,20 @@
+.Grupo {
+  text-align: center;
+}
+
+.Titulo {
+  text-align: center;
+  font-size: 30px;
+}
+
+.Tabla {
+  border-style: style;
+}
+
+.Partido {
+  display: flex;
+}
+
+.Pais {
+  flex-grow: 3
+}
