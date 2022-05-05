@@ -1,20 +1,34 @@
-.Grupo {
-  text-align: center;
-}
-
 .Titulo {
   text-align: center;
   font-size: 30px;
 }
 
-.Tabla {
-  border-style: style;
-}
 
 .Partido {
   display: flex;
+  align-items: center;
 }
 
-.Pais {
-  flex-grow: 3
+.Goles {
+  flex-shrink: 3;
+  width: 20px;
+  height: 20px
+}
+
+.Pais_1 {
+  padding-right: 15px;
+}
+
+.Pais_2 {
+  padding-left: 15px;
+}
+
+.tables {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.group {
+  border: 1px solid black;
+  margin: 10px;
 }
