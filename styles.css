@@ -4,15 +4,9 @@
 }
 
 
-.Partido {
-  display: flex;
-  align-items: center;
-}
+#Count {
 
-.Goles {
-  flex-shrink: 3;
-  width: 20px;
-  height: 20px
+width: 50px;
 }
 
 .Pais_1 {
