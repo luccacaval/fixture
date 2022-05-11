@@ -8,21 +8,3 @@
 
 width: 50px;
 }
-
-.Pais_1 {
-  padding-right: 15px;
-}
-
-.Pais_2 {
-  padding-left: 15px;
-}
-
-.tables {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-}
-
-.group {
-  border: 1px solid black;
-  margin: 10px;
-}
