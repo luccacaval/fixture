@@ -15,4 +15,7 @@ border:1px solid #000000;
 .table{
 border-collapse:collapse;
 border:2px solid #000000;
+position: relative;
+left: 800px;
+/* bottom: 100px; */
 }

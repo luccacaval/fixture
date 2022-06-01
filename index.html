@@ -8,12 +8,18 @@
   <body>
     <h1 class="Titulo">Fixture Qtar 2022</h1>
     <div class="Grupos">
-
-    <button type="button" onclick="Mostrar_Grupo_1()"> Grupo 1</button>
+    <button type="button" data-tableid="table1" onclick="mostrar(event)"> Grupo A</button>
+    <button type="button" data-tableid="table2" onclick="mostrar(event)"> Grupo B</button>
+    <button type="button" data-tableid="table3" onclick="mostrar(event)"> Grupo C</button>
+    <button type="button" data-tableid="table4" onclick="mostrar(event)"> Grupo D</button>
+    <button type="button" data-tableid="table5" onclick="mostrar(event)"> Grupo E</button>
+    <button type="button" data-tableid="table6" onclick="mostrar(event)"> Grupo F</button>
+    <button type="button" data-tableid="table7" onclick="mostrar(event)"> Grupo G</button>
+    <button type="button" data-tableid="table8" onclick="mostrar(event)"> Grupo H</button>
   </div>
     <br>
-    <div class="">
-    <table class="table">
+
+    <table class="table" id="table1">
       <tr>
         <th class="table-td">#</th>
         <th class="table-td">Equipo</th>
@@ -61,6 +67,7 @@
         <td class="table-td">0</td>
         <td class="table-td">0</td>
         <td class="table-td">0</td>
+        <td class="table-td">0</td>
       </tr>
       <tr>
         <td class="table-td">4</td>
@@ -72,9 +79,450 @@
         <td class="table-td">0</td>
         <td class="table-td">0</td>
         <td class="table-td">0</td>
+      </tr>
+    </table>
+
+
+    <table hidden class="table" id="table2">
+      <tr>
+        <th class="table-td">#</th>
+        <th class="table-td">Equipo</th>
+        <th class="table-td">1</th>
+        <th class="table-td">2</th>
+        <th class="table-td">3</th>
+        <th class="table-td">4</th>
+        <th class="table-td">5</th>
+        <th class="table-td">6</th>
+        <th class="table-td">7</th>
+        <th class="table-td">8</th>
+      </tr>
+      <tr>
+        <td class="table-td">1</td>
+        <td class="table-td">🏴󠁧󠁢󠁥󠁮󠁧󠁿Inglaterra</td>
+        <td class="table-td">0</td>
+        <td class="table-td">0</td>
+        <td class="table-td">0</td>
+        <td class="table-td">0</td>
+        <td class="table-td">0</td>
+        <td class="table-td">0</td>
+        <td class="table-td">0</td>
+        <td class="table-td">0</td>
+      </tr>
+        <tr class="table-td">
+        <td class="table-td">2</td>
+        <td class="table-td">🇮🇷Iran</td>
+        <td class="table-td">0</td>
+        <td class="table-td">0</td>
+        <td class="table-td">0</td>
+        <td class="table-td">0</td>
+        <td class="table-td">0</td>
+        <td class="table-td">0</td>
+        <td class="table-td">0</td>
+        <td class="table-td">0</td>
+      </tr>
+      <tr>
+        <td class="table-td">3</td>
+        <td class="table-td">🇺🇸EEUU</td>
+        <td class="table-td">0</td>
+        <td class="table-td">0</td>
+        <td class="table-td">0</td>
+        <td class="table-td">0</td>
+        <td class="table-td">0</td>
+        <td class="table-td">0</td>
+        <td class="table-td">0</td>
+        <td class="table-td">0</td>
+      </tr>
+      <tr>
+        <td class="table-td">4</td>
+        <td class="table-td">🏴󠁧󠁢󠁷󠁬󠁳󠁿Gales</td>
+        <td class="table-td">0</td>
+        <td class="table-td">0</td>
+        <td class="table-td">0</td>
+        <td class="table-td">0</td>
+        <td class="table-td">0</td>
+        <td class="table-td">0</td>
+        <td class="table-td">0</td>
         <td class="table-td">0</td>
       </tr>
     </div>
+
+    <table class="table" id="table3">
+      <tr>
+        <th class="table-td">#</th>
+        <th class="table-td">Equipo</th>
+        <th class="table-td">1</th>
+        <th class="table-td">2</th>
+        <th class="table-td">3</th>
+        <th class="table-td">4</th>
+        <th class="table-td">5</th>
+        <th class="table-td">6</th>
+        <th class="table-td">7</th>
+        <th class="table-td">8</th>
+      </tr>
+      <tr>
+        <td class="table-td">1</td>
+        <td class="table-td">Argentina</td>
+        <td class="table-td">0</td>
+        <td class="table-td">0</td>
+        <td class="table-td">0</td>
+        <td class="table-td">0</td>
+        <td class="table-td">0</td>
+        <td class="table-td">0</td>
+        <td class="table-td">0</td>
+        <td class="table-td">0</td>
+      </tr>
+        <tr class="table-td">
+        <td class="table-td">2</td>
+        <td class="table-td">Arabia Saudita</td>
+        <td class="table-td">0</td>
+        <td class="table-td">0</td>
+        <td class="table-td">0</td>
+        <td class="table-td">0</td>
+        <td class="table-td">0</td>
+        <td class="table-td">0</td>
+        <td class="table-td">0</td>
+        <td class="table-td">0</td>
+      </tr>
+      <tr>
+        <td class="table-td">3</td>
+        <td class="table-td">México</td>
+        <td class="table-td">0</td>
+        <td class="table-td">0</td>
+        <td class="table-td">0</td>
+        <td class="table-td">0</td>
+        <td class="table-td">0</td>
+        <td class="table-td">0</td>
+        <td class="table-td">0</td>
+        <td class="table-td">0</td>
+      </tr>
+      <tr>
+        <td class="table-td">4</td>
+        <td class="table-td">Polonia</td>
+        <td class="table-td">0</td>
+        <td class="table-td">0</td>
+        <td class="table-td">0</td>
+        <td class="table-td">0</td>
+        <td class="table-td">0</td>
+        <td class="table-td">0</td>
+        <td class="table-td">0</td>
+        <td class="table-td">0</td>
+      </tr>
+    </table>
+
+
+    <table class="table" id="table4">
+      <tr>
+        <th class="table-td">#</th>
+        <th class="table-td">Equipo</th>
+        <th class="table-td">1</th>
+        <th class="table-td">2</th>
+        <th class="table-td">3</th>
+        <th class="table-td">4</th>
+        <th class="table-td">5</th>
+        <th class="table-td">6</th>
+        <th class="table-td">7</th>
+        <th class="table-td">8</th>
+      </tr>
+      <tr>
+        <td class="table-td">1</td>
+        <td class="table-td">Francia</td>
+        <td class="table-td">0</td>
+        <td class="table-td">0</td>
+        <td class="table-td">0</td>
+        <td class="table-td">0</td>
+        <td class="table-td">0</td>
+        <td class="table-td">0</td>
+        <td class="table-td">0</td>
+        <td class="table-td">0</td>
+      </tr>
+        <tr class="table-td">
+        <td class="table-td">2</td>
+        <td class="table-td">Perú</td>
+        <td class="table-td">0</td>
+        <td class="table-td">0</td>
+        <td class="table-td">0</td>
+        <td class="table-td">0</td>
+        <td class="table-td">0</td>
+        <td class="table-td">0</td>
+        <td class="table-td">0</td>
+        <td class="table-td">0</td>
+      </tr>
+      <tr>
+        <td class="table-td">3</td>
+        <td class="table-td">Dianamarca</td>
+        <td class="table-td">0</td>
+        <td class="table-td">0</td>
+        <td class="table-td">0</td>
+        <td class="table-td">0</td>
+        <td class="table-td">0</td>
+        <td class="table-td">0</td>
+        <td class="table-td">0</td>
+        <td class="table-td">0</td>
+      </tr>
+      <tr>
+        <td class="table-td">4</td>
+        <td class="table-td">Túnez</td>
+        <td class="table-td">0</td>
+        <td class="table-td">0</td>
+        <td class="table-td">0</td>
+        <td class="table-td">0</td>
+        <td class="table-td">0</td>
+        <td class="table-td">0</td>
+        <td class="table-td">0</td>
+        <td class="table-td">0</td>
+      </tr>
+    </div>
+    <table class="table" id="table5">
+      <tr>
+        <th class="table-td">#</th>
+        <th class="table-td">Equipo</th>
+        <th class="table-td">1</th>
+        <th class="table-td">2</th>
+        <th class="table-td">3</th>
+        <th class="table-td">4</th>
+        <th class="table-td">5</th>
+        <th class="table-td">6</th>
+        <th class="table-td">7</th>
+        <th class="table-td">8</th>
+      </tr>
+      <tr>
+        <td class="table-td">1</td>
+        <td class="table-td">España</td>
+        <td class="table-td">0</td>
+        <td class="table-td">0</td>
+        <td class="table-td">0</td>
+        <td class="table-td">0</td>
+        <td class="table-td">0</td>
+        <td class="table-td">0</td>
+        <td class="table-td">0</td>
+        <td class="table-td">0</td>
+      </tr>
+        <tr class="table-td">
+        <td class="table-td">2</td>
+        <td class="table-td">Costa Rica</td>
+        <td class="table-td">0</td>
+        <td class="table-td">0</td>
+        <td class="table-td">0</td>
+        <td class="table-td">0</td>
+        <td class="table-td">0</td>
+        <td class="table-td">0</td>
+        <td class="table-td">0</td>
+        <td class="table-td">0</td>
+      </tr>
+      <tr>
+        <td class="table-td">3</td>
+        <td class="table-td">Alemania</td>
+        <td class="table-td">0</td>
+        <td class="table-td">0</td>
+        <td class="table-td">0</td>
+        <td class="table-td">0</td>
+        <td class="table-td">0</td>
+        <td class="table-td">0</td>
+        <td class="table-td">0</td>
+        <td class="table-td">0</td>
+      </tr>
+      <tr>
+        <td class="table-td">4</td>
+        <td class="table-td">Japon</td>
+        <td class="table-td">0</td>
+        <td class="table-td">0</td>
+        <td class="table-td">0</td>
+        <td class="table-td">0</td>
+        <td class="table-td">0</td>
+        <td class="table-td">0</td>
+        <td class="table-td">0</td>
+        <td class="table-td">0</td>
+      </tr>
+    </table>
+
+    <table class="table" id="table6">
+      <tr>
+        <th class="table-td">#</th>
+        <th class="table-td">Equipo</th>
+        <th class="table-td">1</th>
+        <th class="table-td">2</th>
+        <th class="table-td">3</th>
+        <th class="table-td">4</th>
+        <th class="table-td">5</th>
+        <th class="table-td">6</th>
+        <th class="table-td">7</th>
+        <th class="table-td">8</th>
+      </tr>
+      <tr>
+        <td class="table-td">1</td>
+        <td class="table-td">Bélgica</td>
+        <td class="table-td">0</td>
+        <td class="table-td">0</td>
+        <td class="table-td">0</td>
+        <td class="table-td">0</td>
+        <td class="table-td">0</td>
+        <td class="table-td">0</td>
+        <td class="table-td">0</td>
+        <td class="table-td">0</td>
+      </tr>
+        <tr class="table-td">
+        <td class="table-td">2</td>
+        <td class="table-td">Canada</td>
+        <td class="table-td">0</td>
+        <td class="table-td">0</td>
+        <td class="table-td">0</td>
+        <td class="table-td">0</td>
+        <td class="table-td">0</td>
+        <td class="table-td">0</td>
+        <td class="table-td">0</td>
+        <td class="table-td">0</td>
+      </tr>
+      <tr>
+        <td class="table-td">3</td>
+        <td class="table-td">Marruecos</td>
+        <td class="table-td">0</td>
+        <td class="table-td">0</td>
+        <td class="table-td">0</td>
+        <td class="table-td">0</td>
+        <td class="table-td">0</td>
+        <td class="table-td">0</td>
+        <td class="table-td">0</td>
+        <td class="table-td">0</td>
+      </tr>
+      <tr>
+        <td class="table-td">4</td>
+        <td class="table-td">Croacia</td>
+        <td class="table-td">0</td>
+        <td class="table-td">0</td>
+        <td class="table-td">0</td>
+        <td class="table-td">0</td>
+        <td class="table-td">0</td>
+        <td class="table-td">0</td>
+        <td class="table-td">0</td>
+        <td class="table-td">0</td>
+      </tr>
+    </table>
+    <table class="table" id="table7">
+      <tr>
+        <th class="table-td">#</th>
+        <th class="table-td">Equipo</th>
+        <th class="table-td">1</th>
+        <th class="table-td">2</th>
+        <th class="table-td">3</th>
+        <th class="table-td">4</th>
+        <th class="table-td">5</th>
+        <th class="table-td">6</th>
+        <th class="table-td">7</th>
+        <th class="table-td">8</th>
+      </tr>
+      <tr>
+        <td class="table-td">1</td>
+        <td class="table-td">Brasil</td>
+        <td class="table-td">0</td>
+        <td class="table-td">0</td>
+        <td class="table-td">0</td>
+        <td class="table-td">0</td>
+        <td class="table-td">0</td>
+        <td class="table-td">0</td>
+        <td class="table-td">0</td>
+        <td class="table-td">0</td>
+      </tr>
+        <tr class="table-td">
+        <td class="table-td">2</td>
+        <td class="table-td">Serbia</td>
+        <td class="table-td">0</td>
+        <td class="table-td">0</td>
+        <td class="table-td">0</td>
+        <td class="table-td">0</td>
+        <td class="table-td">0</td>
+        <td class="table-td">0</td>
+        <td class="table-td">0</td>
+        <td class="table-td">0</td>
+      </tr>
+      <tr>
+        <td class="table-td">3</td>
+        <td class="table-td">Suiza</td>
+        <td class="table-td">0</td>
+        <td class="table-td">0</td>
+        <td class="table-td">0</td>
+        <td class="table-td">0</td>
+        <td class="table-td">0</td>
+        <td class="table-td">0</td>
+        <td class="table-td">0</td>
+        <td class="table-td">0</td>
+      </tr>
+      <tr>
+        <td class="table-td">4</td>
+        <td class="table-td">Camerún</td>
+        <td class="table-td">0</td>
+        <td class="table-td">0</td>
+        <td class="table-td">0</td>
+        <td class="table-td">0</td>
+        <td class="table-td">0</td>
+        <td class="table-td">0</td>
+        <td class="table-td">0</td>
+        <td class="table-td">0</td>
+      </tr>
+    </table>
+    <table class="table" id="table8">
+      <tr>
+        <th class="table-td">#</th>
+        <th class="table-td">Equipo</th>
+        <th class="table-td">1</th>
+        <th class="table-td">2</th>
+        <th class="table-td">3</th>
+        <th class="table-td">4</th>
+        <th class="table-td">5</th>
+        <th class="table-td">6</th>
+        <th class="table-td">7</th>
+        <th class="table-td">8</th>
+
+      </tr>
+        <td class="table-td">1</td>
+        <td class="table-td">Portugal</td>
+        <td class="table-td">0</td>
+        <td class="table-td">0</td>
+        <td class="table-td">0</td>
+        <td class="table-td">0</td>
+        <td class="table-td">0</td>
+        <td class="table-td">0</td>
+        <td class="table-td">0</td>
+        <td class="table-td">0</td>
+      </tr>
+        <tr class="table-td">
+        <td class="table-td">2</td>
+        <td class="table-td">Ghana</td>
+        <td class="table-td">0</td>
+        <td class="table-td">0</td>
+        <td class="table-td">0</td>
+        <td class="table-td">0</td>
+        <td class="table-td">0</td>
+        <td class="table-td">0</td>
+        <td class="table-td">0</td>
+        <td class="table-td">0</td>
+      </tr>
+      <tr>
+        <td class="table-td">3</td>
+        <td class="table-td">Uruguay</td>
+        <td class="table-td">0</td>
+        <td class="table-td">0</td>
+        <td class="table-td">0</td>
+        <td class="table-td">0</td>
+        <td class="table-td">0</td>
+        <td class="table-td">0</td>
+        <td class="table-td">0</td>
+        <td class="table-td">0</td>
+      </tr>
+      <tr>
+        <td class="table-td">4</td>
+        <td class="table-td">Corea del sur</td>
+        <td class="table-td">0</td>
+        <td class="table-td">0</td>
+        <td class="table-td">0</td>
+        <td class="table-td">0</td>
+        <td class="table-td">0</td>
+        <td class="table-td">0</td>
+        <td class="table-td">0</td>
+        <td class="table-td">0</td>
+      </tr>
+    </table>
+
+
     <button type="button" onclick="Mostrar_Fecha_1()">
       Fecha 1
     </button>
