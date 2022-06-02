@@ -11,44 +11,31 @@ function mostrar(e) {
 }
 
 function Mostrar_Fecha_1() {
-  document.getElementById('Fecha_1').style.display = 'none';
-  document.getElementById('Fecha_2').style.display = 'none';
-  document.getElementById('Fecha_3').style.display = 'none';
+  hidfech();
   if (tableid == "table1") {
-    document.getElementById('Fecha_1').style.display = 'block';
-    document.getElementById('Fecha_2').style.display = 'none';
-    document.getElementById('Fecha_3').style.display = 'none';
+    document.getElementById('Fecha_1t1').style.display = 'block';
 
   }
 }
 function Mostrar_Fecha_2() {
-  document.getElementById('Fecha_1').style.display = 'none';
-  document.getElementById('Fecha_2').style.display = 'none';
-  document.getElementById('Fecha_3').style.display = 'none';
-
+  hidfech();
   if (tableid == "table1") {
-    document.getElementById('Fecha_1').style.display = 'none';
-    document.getElementById('Fecha_2').style.display = 'block';
-    document.getElementById('Fecha_3').style.display = 'none';
+    document.getElementById('Fecha_2t1').style.display = 'block';
+
 
   }
 }
 function Mostrar_Fecha_3() {
-  document.getElementById('Fecha_1').style.display = 'none';
-  document.getElementById('Fecha_2').style.display = 'none';
-  document.getElementById('Fecha_3').style.display = 'none';
-
+  hidfech();
   if (tableid == "table1") {
-    document.getElementById('Fecha_1').style.display = 'none';
-    document.getElementById('Fecha_2').style.display = 'none';
-    document.getElementById('Fecha_3').style.display = 'block';
+    document.getElementById('Fecha_3t1').style.display = 'block';
 
   }
 }
 function hidfech() {
-  document.getElementById('Fecha_1').style.display = 'none';
-  document.getElementById('Fecha_2').style.display = 'none';
-  document.getElementById('Fecha_3').style.display = 'none';
+  document.getElementById('Fecha_1t1').style.display = 'none';
+  document.getElementById('Fecha_2t1').style.display = 'none';
+  document.getElementById('Fecha_3t1').style.display = 'none';
 
 }
 function hidgrup() {
