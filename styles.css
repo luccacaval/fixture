@@ -3,8 +3,24 @@
   font-size: 30px;
 }
 
+body{
+background-color: #118C02;
+
+}
 
 #Count {
-
 width: 50px;
+}
+
+.table-td{
+border:1px solid #000000;
+background-color: grey;
+}
+
+.table{
+border-collapse:collapse;
+border:2px solid #000000;
+position: relative;
+left: 400px;
+/* bottom: 100px; */
 }

@@ -1,20 +1,59 @@
-function show(e) {
-  console.log(e.target.dataset.group);
-  let div = document.querySelector('.' + e.target.dataset.group);
-  console.log(div);
-  div.hidden = !div.hidden;
-  let fechas1 = document.querySelectorAll('.Fecha_1');
-  let fechas2 = document.querySelectorAll('.Fecha_2');
-  let fechas3 = document.querySelectorAll('.Fecha_3');
-  for (let divs of fechas1) {
-    fechas1.hidden = true
-  }
+hidfech();
+hidgrup();
+
+let tableid;
+function mostrar(e) {
+  hidgrup();
+  hidfech();
+  tableid = e.target.dataset.tableid;
+  let table = document.getElementById(tableid);
+  table.hidden = !table.hidden;
 }
 
 function Mostrar_Fecha_1() {
-  let fechas = document.querySelectorAll('.Fecha_1');
-  for (let div  of fechas) {
-    if (document.parentElement.hidden == false){
-      fechas.hidden = false
-    }
+  hidfech();
+  if (tableid == "table1") {
+    document.getElementById('Fecha_1t1').style.display = 'block';
+  }
+  if (tableid == "table2") {
+    document.getElementById('Fecha_1t2').style.display = 'block';
+}
+}
+function Mostrar_Fecha_2() {
+  hidfech();
+  if (tableid == "table1") {
+    document.getElementById('Fecha_2t1').style.display = 'block';
+  }
+  if (tableid == "table2") {
+    document.getElementById('Fecha_2t2').style.display = 'block';
+}
+}
+function Mostrar_Fecha_3() {
+  hidfech();
+  if (tableid == "table1") {
+    document.getElementById('Fecha_3t1').style.display = 'block';
+  }
+    if (tableid == "table2") {
+      document.getElementById('Fecha_3t2').style.display = 'block';
+  }
+}
+function hidfech() {
+  document.getElementById('Fecha_1t1').style.display = 'none';
+  document.getElementById('Fecha_2t1').style.display = 'none';
+  document.getElementById('Fecha_3t1').style.display = 'none';
+  document.getElementById('Fecha_1t2').style.display = 'none';
+  document.getElementById('Fecha_2t2').style.display = 'none';
+  document.getElementById('Fecha_3t2').style.display = 'none';
+
+}
+function hidgrup() {
+  document.getElementById('table1').hidden = true;
+  document.getElementById('table2').hidden = true;
+  document.getElementById('table3').hidden = true;
+  document.getElementById('table4').hidden = true;
+  document.getElementById('table5').hidden = true;
+  document.getElementById('table6').hidden = true;
+  document.getElementById('table7').hidden = true;
+  document.getElementById('table8').hidden = true;
+
 }
