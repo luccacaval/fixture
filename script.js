@@ -17,7 +17,9 @@ function fasedeg() {
 }
 
 function llaves() {
-console.log("nada");
+    let grupos = document.getElementById('multillave')
+    grupos.hidden = !grupos.hidden
+
 }
 
 function Mostrar_Fecha_1() {
@@ -129,8 +131,9 @@ function hidfech() {
 }
 function hidlist() {
   let grupos = document.getElementById('nene')
+  let llaves = document.getElementById('multillave')
   grupos.hidden = true
-  // llaves.hidden = true
+  llaves.hidden = true
 }
 function hidgrup() {
   document.getElementById('table1').hidden = true;

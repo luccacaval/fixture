@@ -7,12 +7,31 @@ body{
 background-color: #118C02;
 
 }
+.inu{
+  width: 40px;
+}
 #der {
   position: relative;
   left: 1000px;
   bottom: 214px;
 }
 
+
+#s1{
+  position:relative;
+  left: 215px;
+  bottom: 375px;
+}
+#s2{
+  position:relative;
+  left: 830px;
+  bottom: 483px;
+}
+#fin{
+  position:relative;
+  left: 550px;
+  bottom: 570px;
+}
 
 #Count {
 width: 50px;
