@@ -7,21 +7,11 @@
   </head>
   <body>
     <h1 class="Titulo">Fixture Qtar 2022</h1>
-    <div class="Llaves">
-    <button type="button" onclick="faseDeG()">
-      Fase de grupos
-    </button>
-    <button type="button" onclick="cuartos()">
-      Cuartos de final
-    </button>
-    <button type="button" onclick="semi()">
-      Semi Finales
-    </button>
-    <button type="button" onclick="final()">
-      Final
-    </button>
-  </div>
-  <div id="grupiño">
+    <div class ="lista">
+      <button type="button" onclick="fasedeg()"> Fase de grupos</button>
+      <button type="button" onclick="llaves()"> Llaves</button>
+    </div>
+    <div class="Grupos" id= "nene">
     <button type="button" data-tableid="table1"  onclick="mostrar(event)"> Grupo A</button>
     <button type="button" data-tableid="table2"  onclick="mostrar(event)"> Grupo B</button>
     <button type="button" data-tableid="table3"  onclick="mostrar(event)"> Grupo C</button>
@@ -32,23 +22,22 @@
     <button type="button" data-tableid="table8"  onclick="mostrar(event)"> Grupo H</button>
 
     <br>
-    <table class="table" id="table1">
+
+    <table class="Grupo_1 table" id="table1">
       <tr>
         <th class="table-td">#</th>
         <th class="table-td">Equipo</th>
-        <th class="table-td">1</th>
-        <th class="table-td">2</th>
-        <th class="table-td">3</th>
-        <th class="table-td">4</th>
-        <th class="table-td">5</th>
-        <th class="table-td">6</th>
-        <th class="table-td">7</th>
-        <th class="table-td">8</th>
+        <th class="table-td">Pts</th>
+        <th class="table-td">PJ</th>
+        <th class="table-td">PG</th>
+        <th class="table-td">PE</th>
+        <th class="table-td">PP</th>
+        <th class="table-td">GF</th>
+        <th class="table-td">GC</th>
       </tr>
       <tr>
         <td class="table-td">1</td>
         <td class="table-td">🇶🇦Qatar</td>
-        <td class="table-td">0</td>
         <td class="table-td">0</td>
         <td class="table-td">0</td>
         <td class="table-td">0</td>
@@ -67,12 +56,10 @@
         <td class="table-td">0</td>
         <td class="table-td">0</td>
         <td class="table-td">0</td>
-        <td class="table-td">0</td>
       </tr>
       <tr>
         <td class="table-td">3</td>
         <td class="table-td">🇪🇨Escuador</td>
-        <td class="table-td">0</td>
         <td class="table-td">0</td>
         <td class="table-td">0</td>
         <td class="table-td">0</td>
@@ -91,26 +78,23 @@
         <td class="table-td">0</td>
         <td class="table-td">0</td>
         <td class="table-td">0</td>
-        <td class="table-td">0</td>
       </tr>
     </table>
-    <table class="table" id="table2">
+    <table class="table Grupo_2" id="table2">
       <tr>
         <th class="table-td">#</th>
         <th class="table-td">Equipo</th>
-        <th class="table-td">1</th>
-        <th class="table-td">2</th>
-        <th class="table-td">3</th>
-        <th class="table-td">4</th>
-        <th class="table-td">5</th>
-        <th class="table-td">6</th>
-        <th class="table-td">7</th>
-        <th class="table-td">8</th>
+        <th class="table-td">Pts</th>
+        <th class="table-td">PJ</th>
+        <th class="table-td">PG</th>
+        <th class="table-td">PE</th>
+        <th class="table-td">PP </th>
+        <th class="table-td">GF</th>
+        <th class="table-td">GC</th>
       </tr>
       <tr>
         <td class="table-td">1</td>
         <td class="table-td">🏴󠁧󠁢󠁥󠁮󠁧󠁿Inglaterra</td>
-        <td class="table-td">0</td>
         <td class="table-td">0</td>
         <td class="table-td">0</td>
         <td class="table-td">0</td>
@@ -129,12 +113,9 @@
         <td class="table-td">0</td>
         <td class="table-td">0</td>
         <td class="table-td">0</td>
-        <td class="table-td">0</td>
-      </tr>
       <tr>
         <td class="table-td">3</td>
         <td class="table-td">🇺🇸EEUU</td>
-        <td class="table-td">0</td>
         <td class="table-td">0</td>
         <td class="table-td">0</td>
         <td class="table-td">0</td>
@@ -153,26 +134,23 @@
         <td class="table-td">0</td>
         <td class="table-td">0</td>
         <td class="table-td">0</td>
-        <td class="table-td">0</td>
       </tr>
-    </div>
-    <table class="table" id="table3">
+  </table>
+    <table class="table Grupo_3" id="table3">
       <tr>
         <th class="table-td">#</th>
         <th class="table-td">Equipo</th>
-        <th class="table-td">1</th>
-        <th class="table-td">2</th>
-        <th class="table-td">3</th>
-        <th class="table-td">4</th>
-        <th class="table-td">5</th>
-        <th class="table-td">6</th>
-        <th class="table-td">7</th>
-        <th class="table-td">8</th>
+        <th class="table-td">Pts</th>
+        <th class="table-td">PJ</th>
+        <th class="table-td">PG</th>
+        <th class="table-td">PE</th>
+        <th class="table-td">PP </th>
+        <th class="table-td">GF</th>
+        <th class="table-td">GC</th>
       </tr>
       <tr>
         <td class="table-td">1</td>
         <td class="table-td">🇦🇷Argentina</td>
-        <td class="table-td">0</td>
         <td class="table-td">0</td>
         <td class="table-td">0</td>
         <td class="table-td">0</td>
@@ -191,12 +169,10 @@
         <td class="table-td">0</td>
         <td class="table-td">0</td>
         <td class="table-td">0</td>
-        <td class="table-td">0</td>
       </tr>
       <tr>
         <td class="table-td">3</td>
         <td class="table-td">🇲🇽México</td>
-        <td class="table-td">0</td>
         <td class="table-td">0</td>
         <td class="table-td">0</td>
         <td class="table-td">0</td>
@@ -215,21 +191,19 @@
         <td class="table-td">0</td>
         <td class="table-td">0</td>
         <td class="table-td">0</td>
-        <td class="table-td">0</td>
       </tr>
     </table>
-    <table class="table" id="table4">
+    <table class="table Grupo_4" id="table4">
       <tr>
         <th class="table-td">#</th>
         <th class="table-td">Equipo</th>
-        <th class="table-td">1</th>
-        <th class="table-td">2</th>
-        <th class="table-td">3</th>
-        <th class="table-td">4</th>
-        <th class="table-td">5</th>
-        <th class="table-td">6</th>
-        <th class="table-td">7</th>
-        <th class="table-td">8</th>
+        <th class="table-td">Pts</th>
+        <th class="table-td">PJ</th>
+        <th class="table-td">PG</th>
+        <th class="table-td">PE</th>
+        <th class="table-td">PP </th>
+        <th class="table-td">GF</th>
+        <th class="table-td">GC</th>
       </tr>
       <tr>
         <td class="table-td">1</td>
@@ -241,12 +215,10 @@
         <td class="table-td">0</td>
         <td class="table-td">0</td>
         <td class="table-td">0</td>
-        <td class="table-td">0</td>
       </tr>
         <tr class="table-td">
         <td class="table-td">2</td>
-        <td class="table-td">🇵🇪Perú</td>
-        <td class="table-td">0</td>
+        <td class="table-td">🇦🇺Australia</td>
         <td class="table-td">0</td>
         <td class="table-td">0</td>
         <td class="table-td">0</td>
@@ -265,7 +237,6 @@
         <td class="table-td">0</td>
         <td class="table-td">0</td>
         <td class="table-td">0</td>
-        <td class="table-td">0</td>
       </tr>
       <tr>
         <td class="table-td">4</td>
@@ -277,26 +248,23 @@
         <td class="table-td">0</td>
         <td class="table-td">0</td>
         <td class="table-td">0</td>
-        <td class="table-td">0</td>
       </tr>
-    </div>
-    <table class="table" id="table5">
+    </table>
+    <table class="table Grupo_5" id="table5">
       <tr>
         <th class="table-td">#</th>
         <th class="table-td">Equipo</th>
-        <th class="table-td">1</th>
-        <th class="table-td">2</th>
-        <th class="table-td">3</th>
-        <th class="table-td">4</th>
-        <th class="table-td">5</th>
-        <th class="table-td">6</th>
-        <th class="table-td">7</th>
-        <th class="table-td">8</th>
+        <th class="table-td">Pts</th>
+        <th class="table-td">PJ</th>
+        <th class="table-td">PG</th>
+        <th class="table-td">PE</th>
+        <th class="table-td">PP </th>
+        <th class="table-td">GF</th>
+        <th class="table-td">GC</th>
       </tr>
       <tr>
         <td class="table-td">1</td>
         <td class="table-td">🇪🇸España</td>
-        <td class="table-td">0</td>
         <td class="table-td">0</td>
         <td class="table-td">0</td>
         <td class="table-td">0</td>
@@ -315,12 +283,10 @@
         <td class="table-td">0</td>
         <td class="table-td">0</td>
         <td class="table-td">0</td>
-        <td class="table-td">0</td>
       </tr>
       <tr>
         <td class="table-td">3</td>
         <td class="table-td">🇩🇪Alemania</td>
-        <td class="table-td">0</td>
         <td class="table-td">0</td>
         <td class="table-td">0</td>
         <td class="table-td">0</td>
@@ -339,26 +305,23 @@
         <td class="table-td">0</td>
         <td class="table-td">0</td>
         <td class="table-td">0</td>
-        <td class="table-td">0</td>
       </tr>
     </table>
-    <table class="table" id="table6">
+    <table class="table Grupo_6" id="table6">
       <tr>
         <th class="table-td">#</th>
         <th class="table-td">Equipo</th>
-        <th class="table-td">1</th>
-        <th class="table-td">2</th>
-        <th class="table-td">3</th>
-        <th class="table-td">4</th>
-        <th class="table-td">5</th>
-        <th class="table-td">6</th>
-        <th class="table-td">7</th>
-        <th class="table-td">8</th>
+        <th class="table-td">Pts</th>
+        <th class="table-td">PJ</th>
+        <th class="table-td">PG</th>
+        <th class="table-td">PE</th>
+        <th class="table-td">PP </th>
+        <th class="table-td">GF</th>
+        <th class="table-td">GC</th>
       </tr>
       <tr>
         <td class="table-td">1</td>
         <td class="table-td">🇧🇪Bélgica</td>
-        <td class="table-td">0</td>
         <td class="table-td">0</td>
         <td class="table-td">0</td>
         <td class="table-td">0</td>
@@ -377,12 +340,10 @@
         <td class="table-td">0</td>
         <td class="table-td">0</td>
         <td class="table-td">0</td>
-        <td class="table-td">0</td>
       </tr>
       <tr>
         <td class="table-td">3</td>
         <td class="table-td">🇲🇦Marruecos</td>
-        <td class="table-td">0</td>
         <td class="table-td">0</td>
         <td class="table-td">0</td>
         <td class="table-td">0</td>
@@ -401,26 +362,23 @@
         <td class="table-td">0</td>
         <td class="table-td">0</td>
         <td class="table-td">0</td>
-        <td class="table-td">0</td>
       </tr>
     </table>
-    <table class="table" id="table7">
+    <table class="table Grupo_7" id="table7">
       <tr>
         <th class="table-td">#</th>
         <th class="table-td">Equipo</th>
-        <th class="table-td">1</th>
-        <th class="table-td">2</th>
-        <th class="table-td">3</th>
-        <th class="table-td">4</th>
-        <th class="table-td">5</th>
-        <th class="table-td">6</th>
-        <th class="table-td">7</th>
-        <th class="table-td">8</th>
+        <th class="table-td">Pts</th>
+        <th class="table-td">PJ</th>
+        <th class="table-td">PG</th>
+        <th class="table-td">PE</th>
+        <th class="table-td">PP </th>
+        <th class="table-td">GF</th>
+        <th class="table-td">GC</th>
       </tr>
       <tr>
         <td class="table-td">1</td>
         <td class="table-td">🇧🇷Brasil</td>
-        <td class="table-td">0</td>
         <td class="table-td">0</td>
         <td class="table-td">0</td>
         <td class="table-td">0</td>
@@ -439,12 +397,10 @@
         <td class="table-td">0</td>
         <td class="table-td">0</td>
         <td class="table-td">0</td>
-        <td class="table-td">0</td>
       </tr>
       <tr>
         <td class="table-td">3</td>
         <td class="table-td">🇨🇭Suiza</td>
-        <td class="table-td">0</td>
         <td class="table-td">0</td>
         <td class="table-td">0</td>
         <td class="table-td">0</td>
@@ -463,26 +419,22 @@
         <td class="table-td">0</td>
         <td class="table-td">0</td>
         <td class="table-td">0</td>
-        <td class="table-td">0</td>
       </tr>
     </table>
-    <table class="table" id="table8">
+    <table class="table Grupo_8" id="table8">
       <tr>
         <th class="table-td">#</th>
         <th class="table-td">Equipo</th>
-        <th class="table-td">1</th>
-        <th class="table-td">2</th>
-        <th class="table-td">3</th>
-        <th class="table-td">4</th>
-        <th class="table-td">5</th>
-        <th class="table-td">6</th>
-        <th class="table-td">7</th>
-        <th class="table-td">8</th>
-
+        <th class="table-td">Pts</th>
+        <th class="table-td">PJ</th>
+        <th class="table-td">PG</th>
+        <th class="table-td">PE</th>
+        <th class="table-td">PP </th>
+        <th class="table-td">GF</th>
+        <th class="table-td">GC</th>
       </tr>
         <td class="table-td">1</td>
         <td class="table-td">🇵🇹Portugal</td>
-        <td class="table-td">0</td>
         <td class="table-td">0</td>
         <td class="table-td">0</td>
         <td class="table-td">0</td>
@@ -501,12 +453,10 @@
         <td class="table-td">0</td>
         <td class="table-td">0</td>
         <td class="table-td">0</td>
-        <td class="table-td">0</td>
       </tr>
       <tr>
         <td class="table-td">3</td>
         <td class="table-td">🇺🇾Uruguay</td>
-        <td class="table-td">0</td>
         <td class="table-td">0</td>
         <td class="table-td">0</td>
         <td class="table-td">0</td>
@@ -525,9 +475,10 @@
         <td class="table-td">0</td>
         <td class="table-td">0</td>
         <td class="table-td">0</td>
-        <td class="table-td">0</td>
       </tr>
     </table>
+
+
     <button type="button" onclick="Mostrar_Fecha_1()">
       Fecha 1
     </button>
@@ -537,391 +488,486 @@
     <button type="button" onclick="Mostrar_Fecha_3()">
       Fecha 3
     </button>
-    <div class="Grupo 1">
-
-<div id="Fecha_1t1">
+    <div class="Grupo_1">
+  <div id="Fecha_1t1">
+    <form onsubmit="resultado(event)">
     <p class="Horario">Lunes 21/11 07:00</p>
-      <label>Senegal</label>
-      <input type="number" maxlength="2" id="Count">
-      <input type="number" maxlength="2" id="Count">
-      <label>Paises Bajos</label>
-      </p>
+      <label>🇸🇳Senegal</label>
+      <input type="number" maxlength="2" min="0" id="Count">
+      <input type="number" maxlength="2" min="0" id="Count">
+      <label>🇳🇱Paises Bajos</label>
+      <input type="submit" value="&#x2714;">
+      </form>
+      <form onsubmit="resultado(event)">
     <p class="Horario">Lun 21/11, 13:00</p>
-      <label>Qtar</label>
-      <input type="number" maxlength="2" id="Count">
-      <input type="number" maxlength="2" id="Count">
-      <label>Ecuador</label>
-  </div>
+      <label>🇶🇦Qatar</label>
+      <input type="number" maxlength="2" min="0" id="Count">
+      <input type="number" maxlength="2" min="0" id="Count">
+      <label>🇪🇨Escuador</label>
+      <input type="submit" value="&#x2714;">
+    </form>
+</div>
 <div id="Fecha_2t1">
+  <form onsubmit="resultado(event)">
   <p class="Horario">Viernes 25/11 10:00</p>
-    <label>Senegal</label>
-    <input type="number" maxlength="2" id="Count">
-    <input type="number" maxlength="2" id="Count">
-    <label>Qtar</label>
+    <label>🇸🇳Senegal</label>
+    <input type="number" maxlength="2" min="0" id="Count">
+    <input type="number" maxlength="2" min="0" id="Count">
+    <label>🇶🇦Qatar</label>
+    <input type="submit" value="&#x2714;">
+  </form>
+  <form onsubmit="resultado(event)">
   <p class="Horario">Lun 25/11, 10:00</p>
-    <label>Paises Bajos</label>
-    <input type="number" maxlength="2" id="Count">
-    <input type="number" maxlength="2" id="Count">
-    <label>Ecuador</label>
-
+    <label>🇳🇱Paises Bajos</label>
+    <input type="number" maxlength="2" min="0" id="Count">
+    <input type="number" maxlength="2" min="0" id="Count">
+    <label>🇪🇨Escuador</label>
+    <input type="submit" value="&#x2714;">
+  </form>
 </div>
 <div id="Fecha_3t1">
+  <form onsubmit="resultado(event)">
   <p class="Horario">Martes 29/11 12:00</p>
-    <label>Paises Bajos</label>
-    <input type="number" maxlength="2" id="Count">
-    <input type="number" maxlength="2" id="Count">
-    <label>Qtar</label>
+    <label>🇳🇱Paises Bajos</label>
+    <input type="number" maxlength="2" min="0" id="Count">
+    <input type="number" maxlength="2" min="0" id="Count">
+    <label>🇶🇦Qatar</label>
+    <input type="submit" value="&#x2714;">
+  </form>
+  <form onsubmit="resultado(event)">
   <p class="Horario">Martes 29/11, 12:00</p>
-    <label>Senegal</label>
-    <input type="number" maxlength="2" id="Count">
-    <input type="number" maxlength="2" id="Count">
-    <label>Ecuador</label>
+    <label>🇸🇳Senegal</label>
+    <input type="number" maxlength="2" min="0" id="Count">
+    <input type="number" maxlength="2" min="0" id="Count">
+    <label>🇪🇨Escuador</label>
+    <input type="submit" value="&#x2714;">
+  </form>
 </div>
-<div id="Fecha_1t2">
-  <p class="Horario">JAJAJA</p>
-    <label>Paises Bajos</label>
-    <input type="number" maxlength="2" id="Count">
-    <input type="number" maxlength="2" id="Count">
-    <label>Qtar</label>
-  <p class="Horario">Martes 29/11, 12:00</p>
-    <label>Senegal</label>
-    <input type="number" maxlength="2" id="Count">
-    <input type="number" maxlength="2" id="Count">
-    <label>Ecuador</label>
     </div>
-<div id="Fecha_2t2">
-  <p class="Horario">juas jas</p>
-    <label>Paises Bajos</label>
-    <input type="number" maxlength="2" id="Count">
-    <input type="number" maxlength="2" id="Count">
-    <label>Qtar</label>
-  <p class="Horario">Martes 29/11, 12:00</p>
-    <label>Senegal</label>
-    <input type="number" maxlength="2" id="Count">
-    <input type="number" maxlength="2" id="Count">
-    <label>Ecuador</label>
-      </div>
-<div id="Fecha_3t2">
-  <p class="Horario">pirripi</p>
-    <label>Paises Bajos</label>
-    <input type="number" maxlength="2" id="Count">
-    <input type="number" maxlength="2" id="Count">
-    <label>Qtar</label>
-  <p class="Horario">Martes 29/11, 12:00</p>
-    <label>Senegal</label>
-    <input type="number" maxlength="2" id="Count">
-    <input type="number" maxlength="2" id="Count">
-    <label>Ecuador</label>
-  </div>
-<div id="Fecha_1t3">
-  <p class="Horario">pirripi</p>
-    <label>Paises Bajos</label>
-    <input type="number" maxlength="2" id="Count">
-    <input type="number" maxlength="2" id="Count">
-    <label>Qtar</label>
-  <p class="Horario">Martes 29/11, 12:00</p>
-    <label>Senegal</label>
-    <input type="number" maxlength="2" id="Count">
-    <input type="number" maxlength="2" id="Count">
-    <label>Ecuador</label>
-  </div>
-<div id="Fecha_2t3">
-  <p class="Horario">pirripi</p>
-    <label>Paises Bajos</label>
-    <input type="number" maxlength="2" id="Count">
-    <input type="number" maxlength="2" id="Count">
-    <label>Qtar</label>
-  <p class="Horario">Martes 29/11, 12:00</p>
-    <label>Senegal</label>
-    <input type="number" maxlength="2" id="Count">
-    <input type="number" maxlength="2" id="Count">
-    <label>Ecuador</label>
-      </div>
-<div id="Fecha_3t3">
-  <p class="Horario">pirripi</p>
-    <label>Paises Bajos</label>
-    <input type="number" maxlength="2" id="Count">
-    <input type="number" maxlength="2" id="Count">
-    <label>Qtar</label>
-  <p class="Horario">Martes 29/11, 12:00</p>
-    <label>Senegal</label>
-    <input type="number" maxlength="2" id="Count">
-    <input type="number" maxlength="2" id="Count">
-    <label>Ecuador</label>
-      </div>
-
-<!-- <div id="Fecha_1t4">
-  <p class="Horario">pirripi</p>
-    <label>Paises Bajos</label>
-    <input type="number" maxlength="2" id="Count">
-    <input type="number" maxlength="2" id="Count">
-    <label>Qtar</label>
-  <p class="Horario">Martes 29/11, 12:00</p>
-    <label>Senegal</label>
-    <input type="number" maxlength="2" id="Count">
-    <input type="number" maxlength="2" id="Count">
-    <label>Ecuador</label>
-      </div>
+    <div class="Grupo_2">
+      <div id="Fecha_1t2">
+      <form onsubmit="resultado(event)">
+        <p class="Horario">Lun 21/11, 10:00</p>
+          <label>🏴󠁧󠁢󠁥󠁮󠁧󠁿Inglaterra</label>
+          <input type="number" maxlength="2" min="0" id="Count">
+          <input type="number" maxlength="2" min="0" id="Count">
+          <label>🇮🇷Iran</label>
+          <input type="submit" value="&#x2714;">
+          </form>
+          <form onsubmit="resultado(event)">
+        <p class="Horario">Lun 21/11, 16:00</p>
+          <label>🇺🇸EEUU</label>
+          <input type="number" maxlength="2" min="0" id="Count">
+          <input type="number" maxlength="2" min="0" id="Count">
+          <label>🏴󠁧󠁢󠁷󠁬󠁳󠁿Gales</label>
+          <input type="submit" value="&#x2714;">
+        </form>
     </div>
-  <div class="Grupo 2">
-
+    <div id="Fecha_2t2">
+      <form onsubmit="resultado(event)">
+      <p class="Horario">Vie 25/11, 07:00</p>
+        <label>🏴󠁧󠁢󠁷󠁬󠁳󠁿Gales</label>
+        <input type="number" maxlength="2" min="0" id="Count">
+        <input type="number" maxlength="2" min="0" id="Count">
+        <label>🇮🇷Iran</label>
+        <input type="submit" value="&#x2714;">
+      </form>
+      <form onsubmit="resultado(event)">
+      <p class="Horario">Vie 25/11, 16:00</p>
+        <label>🏴󠁧󠁢󠁥󠁮󠁧󠁿Inglaterra</label>
+        <input type="number" maxlength="2" min="0" id="Count">
+        <input type="number" maxlength="2" min="0" id="Count">
+        <label>🇺🇸EEUU</label>
+        <input type="submit" value="&#x2714;">
+      </form>
+    </div>
+    <div id="Fecha_3t2">
+      <form onsubmit="resultado(event)">
+      <p class="Horario">Martes 29/11 12:00</p>
+        <label>🏴󠁧󠁢󠁷󠁬󠁳󠁿Gales</label>
+        <input type="number" maxlength="2" min="0" id="Count">
+        <input type="number" maxlength="2" min="0" id="Count">
+        <label>🏴󠁧󠁢󠁥󠁮󠁧󠁿Inglaterra</label>
+        <input type="submit" value="&#x2714;">
+      </form>
+      <form onsubmit="resultado(event)">
+      <p class="Horario">Martes 29/11, 12:00</p>
+        <label>🇮🇷Iran</label>
+        <input type="number" maxlength="2" min="0" id="Count">
+        <input type="number" maxlength="2" min="0" id="Count">
+        <label>🇺🇸EEUU</label>
+        <input type="submit" value="&#x2714;">
+      </form>
+    </div>
   </div>
-  <script type="text/javascript" src="script.js"></script>
-  </body>
+  <div class="Grupo_3">
+    <div id="Fecha_1t3">
+    <form onsubmit="resultado(event)">
+      <p class="Horario">Mar 22/11, 07:00</p>
+        <label>🇦🇷Argentina</label>
+        <input type="number" maxlength="2" min="0" id="Count">
+        <input type="number" maxlength="2" min="0" id="Count">
+        <label>🇸🇦Arabia Saudita</label>
+        <input type="submit" value="&#x2714;">
+        </form>
+        <form onsubmit="resultado(event)">
+      <p class="Horario">Mar 22/11, 13:00</p>
+        <label>🇲🇽México</label>
+        <input type="number" maxlength="2" min="0" id="Count">
+        <input type="number" maxlength="2" min="0" id="Count">
+        <label>🇵🇱Polonia</label>
+        <input type="submit" value="&#x2714;">
+      </form>
+  </div>
+  <div id="Fecha_2t3">
+    <form onsubmit="resultado(event)">
+    <p class="Horario">Sab 26/11, 10:00</p>
+      <label>🇵🇱Polonia</label>
+      <input type="number" maxlength="2" min="0" id="Count">
+      <input type="number" maxlength="2" min="0" id="Count">
+      <label>🇸🇦Arabia Saudita</label>
+      <input type="submit" value="&#x2714;">
+    </form>
+    <form onsubmit="resultado(event)">
+    <p class="Horario">Sab 26/11, 16:00</p>
+      <label>🇦🇷Argentina</label>
+      <input type="number" maxlength="2" min="0" id="Count">
+      <input type="number" maxlength="2" min="0" id="Count">
+      <label>🇲🇽México</label>
+      <input type="submit" value="&#x2714;">
+    </form>
+  </div>
+  <div id="Fecha_3t3">
+    <form onsubmit="resultado(event)">
+    <p class="Horario">Mie 30/11, 16:00</p>
+      <label>🇵🇱Polonia</label>
+      <input type="number" maxlength="2" min="0" id="Count">
+      <input type="number" maxlength="2" min="0" id="Count">
+      <label>🇦🇷Argentina</label>
+      <input type="submit" value="&#x2714;">
+    </form>
+    <form onsubmit="resultado(event)">
+    <p class="Horario">Martes 29/11, 12:00</p>
+      <label>🇸🇦Arabia Saudita</label>
+      <input type="number" maxlength="2" min="0" id="Count">
+      <input type="number" maxlength="2" min="0" id="Count">
+      <label>🇲🇽México</label>
+      <input type="submit" value="&#x2714;">
+    </form>
+  </div>
+</div>
+<div class="Grupo_4">
+  <div id="Fecha_1t4">
+  <form onsubmit="resultado(event)">
+    <p class="Horario">Mar 22/11, 10:00</p>
+      <label>🇩🇰Dianamarca</label>
+      <input type="number" maxlength="2" min="0" id="Count">
+      <input type="number" maxlength="2" min="0" id="Count">
+      <label>🇹🇳Túnez</label>
+      <input type="submit" value="&#x2714;">
+      </form>
+      <form onsubmit="resultado(event)">
+    <p class="Horario">Mar 22/11, 16:00</p>
+      <label>🇫🇷Francia</label>
+      <input type="number" maxlength="2" min="0" id="Count">
+      <input type="number" maxlength="2" min="0" id="Count">
+      <label>🇦🇺Australia</label>
+      <input type="submit" value="&#x2714;">
+    </form>
+</div>
 <div id="Fecha_2t4">
-  <p class="Horario">pirripi</p>
-    <label>Paises Bajos</label>
-    <input type="number" maxlength="2" id="Count">
-    <input type="number" maxlength="2" id="Count">
-    <label>Qtar</label>
-  <p class="Horario">Martes 29/11, 12:00</p>
-    <label>Senegal</label>
-    <input type="number" maxlength="2" id="Count">
-    <input type="number" maxlength="2" id="Count">
-    <label>Ecuador</label>
-      </div>
-    </div>
-  <div class="Grupo 2">
-
+  <form onsubmit="resultado(event)">
+  <p class="Horario">Sab 26/11, 07:00</p>
+    <label>🇹🇳Túnez</label>
+    <input type="number" maxlength="2" min="0" id="Count">
+    <input type="number" maxlength="2" min="0" id="Count">
+    <label>🇦🇺Australia</label>
+    <input type="submit" value="&#x2714;">
+  </form>
+  <form onsubmit="resultado(event)">
+  <p class="Horario">Sab 26/11, 13:00</p>
+    <label>🇫🇷Francia</label>
+    <input type="number" maxlength="2" min="0" id="Count">
+    <input type="number" maxlength="2" min="0" id="Count">
+    <label>🇩🇰Dianamarca</label>
+    <input type="submit" value="&#x2714;">
+  </form>
   </div>
-  <script type="text/javascript" src="script.js"></script>
-  </body>
-<div id="Fecha_3t4">
-  <p class="Horario">pirripi</p>
-    <label>Paises Bajos</label>
-    <input type="number" maxlength="2" id="Count">
-    <input type="number" maxlength="2" id="Count">
-    <label>Qtar</label>
-  <p class="Horario">Martes 29/11, 12:00</p>
-    <label>Senegal</label>
-    <input type="number" maxlength="2" id="Count">
-    <input type="number" maxlength="2" id="Count">
-    <label>Ecuador</label>
-      </div>
-    </div>
-  <div class="Grupo 2">
-
-  </div>
-  <script type="text/javascript" src="script.js"></script>
-  </body>
-<div id="Fecha_1t5">
-  <p class="Horario">pirripi</p>
-    <label>Paises Bajos</label>
-    <input type="number" maxlength="2" id="Count">
-    <input type="number" maxlength="2" id="Count">
-    <label>Qtar</label>
-  <p class="Horario">Martes 29/11, 12:00</p>
-    <label>Senegal</label>
-    <input type="number" maxlength="2" id="Count">
-    <input type="number" maxlength="2" id="Count">
-    <label>Ecuador</label>
-      </div>
-    </div>
-  <div class="Grupo 2">
-
-  </div>
-  <script type="text/javascript" src="script.js"></script>
-  </body>
-<div id="Fecha_2t5">
-  <p class="Horario">pirripi</p>
-    <label>Paises Bajos</label>
-    <input type="number" maxlength="2" id="Count">
-    <input type="number" maxlength="2" id="Count">
-    <label>Qtar</label>
-  <p class="Horario">Martes 29/11, 12:00</p>
-    <label>Senegal</label>
-    <input type="number" maxlength="2" id="Count">
-    <input type="number" maxlength="2" id="Count">
-    <label>Ecuador</label>
-      </div>
-    </div>
-  <div class="Grupo 2">
-
-  </div>
-  <script type="text/javascript" src="script.js"></script>
-  </body>
-<div id="Fecha_3t5">
-  <p class="Horario">pirripi</p>
-    <label>Paises Bajos</label>
-    <input type="number" maxlength="2" id="Count">
-    <input type="number" maxlength="2" id="Count">
-    <label>Qtar</label>
-  <p class="Horario">Martes 29/11, 12:00</p>
-    <label>Senegal</label>
-    <input type="number" maxlength="2" id="Count">
-    <input type="number" maxlength="2" id="Count">
-    <label>Ecuador</label>
-      </div>
-    </div>
-  <div class="Grupo 2">
-
-  </div>
-  <script type="text/javascript" src="script.js"></script>
-  </body>
-<div id="Fecha_1t6">
-  <p class="Horario">pirripi</p>
-    <label>Paises Bajos</label>
-    <input type="number" maxlength="2" id="Count">
-    <input type="number" maxlength="2" id="Count">
-    <label>Qtar</label>
-  <p class="Horario">Martes 29/11, 12:00</p>
-    <label>Senegal</label>
-    <input type="number" maxlength="2" id="Count">
-    <input type="number" maxlength="2" id="Count">
-    <label>Ecuador</label>
-      </div>
-    </div>
-  <div class="Grupo 2">
-
-  </div>
-  <script type="text/javascript" src="script.js"></script>
-  </body>
-<div id="Fecha_2t6">
-  <p class="Horario">pirripi</p>
-    <label>Paises Bajos</label>
-    <input type="number" maxlength="2" id="Count">
-    <input type="number" maxlength="2" id="Count">
-    <label>Qtar</label>
-  <p class="Horario">Martes 29/11, 12:00</p>
-    <label>Senegal</label>
-    <input type="number" maxlength="2" id="Count">
-    <input type="number" maxlength="2" id="Count">
-    <label>Ecuador</label>
-      </div>
-    </div>
-  <div class="Grupo 2">
-
-  </div>
-  <script type="text/javascript" src="script.js"></script>
-  </body>
-<div id="Fecha_3t6">
-  <p class="Horario">pirripi</p>
-    <label>Paises Bajos</label>
-    <input type="number" maxlength="2" id="Count">
-    <input type="number" maxlength="2" id="Count">
-    <label>Qtar</label>
-  <p class="Horario">Martes 29/11, 12:00</p>
-    <label>Senegal</label>
-    <input type="number" maxlength="2" id="Count">
-    <input type="number" maxlength="2" id="Count">
-    <label>Ecuador</label>
-      </div>
-    </div>
-  <div class="Grupo 2">
-
-  </div>
-  <script type="text/javascript" src="script.js"></script>
-  </body>
-<div id="Fecha_1t7">
-  <p class="Horario">pirripi</p>
-    <label>Paises Bajos</label>
-    <input type="number" maxlength="2" id="Count">
-    <input type="number" maxlength="2" id="Count">
-    <label>Qtar</label>
-  <p class="Horario">Martes 29/11, 12:00</p>
-    <label>Senegal</label>
-    <input type="number" maxlength="2" id="Count">
-    <input type="number" maxlength="2" id="Count">
-    <label>Ecuador</label>
-      </div>
-    </div>
-  <div class="Grupo 2">
-
-  </div>
-  <script type="text/javascript" src="script.js"></script>
-  </body>
-<div id="Fecha_2t7">
-  <p class="Horario">pirripi</p>
-    <label>Paises Bajos</label>
-    <input type="number" maxlength="2" id="Count">
-    <input type="number" maxlength="2" id="Count">
-    <label>Qtar</label>
-  <p class="Horario">Martes 29/11, 12:00</p>
-    <label>Senegal</label>
-    <input type="number" maxlength="2" id="Count">
-    <input type="number" maxlength="2" id="Count">
-    <label>Ecuador</label>
-      </div>
-    </div>
-  <div class="Grupo 2">
-
-  </div>
-  <script type="text/javascript" src="script.js"></script>
-  </body>
-<div id="Fecha_3t7">
-  <p class="Horario">pirripi</p>
-    <label>Paises Bajos</label>
-    <input type="number" maxlength="2" id="Count">
-    <input type="number" maxlength="2" id="Count">
-    <label>Qtar</label>
-  <p class="Horario">Martes 29/11, 12:00</p>
-    <label>Senegal</label>
-    <input type="number" maxlength="2" id="Count">
-    <input type="number" maxlength="2" id="Count">
-    <label>Ecuador</label>
-      </div>
-    </div>
-  <div class="Grupo 2">
-
-  </div>
-  <script type="text/javascript" src="script.js"></script>
-  </body>
-<div id="Fecha_1t8">
-  <p class="Horario">pirripi</p>
-    <label>Paises Bajos</label>
-    <input type="number" maxlength="2" id="Count">
-    <input type="number" maxlength="2" id="Count">
-    <label>Qtar</label>
-  <p class="Horario">Martes 29/11, 12:00</p>
-    <label>Senegal</label>
-    <input type="number" maxlength="2" id="Count">
-    <input type="number" maxlength="2" id="Count">
-    <label>Ecuador</label>
-      </div>
-    </div>
-  <div class="Grupo 2">
-
-  </div>
-  <script type="text/javascript" src="script.js"></script>
-  </body>
-<div id="Fecha_2t8">
-  <p class="Horario">pirripi</p>
-    <label>Paises Bajos</label>
-    <input type="number" maxlength="2" id="Count">
-    <label>Senegal</label>
-    <input type="number" maxlength="2" id="Count">
-    <label>Qtar</label>
-  <p class="Horario">Martes 29/11, 12:00</p>
-    <input type="number" maxlength="2" id="Count">
-    <input type="number" maxlength="2" id="Count">
-    <label>Ecuador</label>
-      </div>
-    </div>
-  <div class="Grupo 2">
-
-  </div>
-  <script type="text/javascript" src="script.js"></script>
-  </body>
-<div id="Fecha_3t8">
-  <p class="Horario">pirripi</p>
-    <label>Paises Bajos</label>
-    <input type="number" maxlength="2" id="Count">
-    <input type="number" maxlength="2" id="Count">
-    <label>Qtar</label>
-  <p class="Horario">Martes 29/11, 12:00</p>
-    <label>Senegal</label>
-    <input type="number" maxlength="2" id="Count">
-    <input type="number" maxlength="2" id="Count">
-    <label>Ecuador</label>
-      </div>
-    </div>
-  <div class="Grupo 2">
-
-  </div>
-  <script type="text/javascript" src="script.js"></script>
-  </body>
-</div> -->
+  <div id="Fecha_3t4">
+    <form onsubmit="resultado(event)">
+    <p class="Horario">Mie 30/11, 12:00</p>
+      <label>🇹🇳Túnez</label>
+      <input type="number" maxlength="2" min="0" id="Count">
+      <input type="number" maxlength="2" min="0" id="Count">
+      <label>🇫🇷Francia</label>
+      <input type="submit" value="&#x2714;">
+    </form>
+    <form onsubmit="resultado(event)">
+    <p class="Horario">Mie 30/11, 12:00</p>
+      <label>🇦🇺Australia</label>
+      <input type="number" maxlength="2" min="0" id="Count">
+      <input type="number" maxlength="2" min="0" id="Count">
+      <label>🇩🇰Dianamarca</label>
+      <input type="submit" value="&#x2714;">
+    </form>
 </div>
-<script type="text/javascript" src="script.js"></script>
-</body>
+</div>
+<div class="Grupo_5">
+  <div id="Fecha_1t5">
+  <form onsubmit="resultado(event)">
+    <p class="Horario">Mie 23/11, 10:00</p>
+      <label>🇩🇪Alemania</label>
+      <input type="number" maxlength="2" min="0" id="Count">
+      <input type="number" maxlength="2" min="0" id="Count">
+      <label>🇯🇵Japon</label>
+      <input type="submit" value="&#x2714;">
+      </form>
+      <form onsubmit="resultado(event)">
+    <p class="Horario">Mie 23/11, 13:00</p>
+      <label>🇪🇸España</label>
+      <input type="number" maxlength="2" min="0" id="Count">
+      <input type="number" maxlength="2" min="0" id="Count">
+      <label>🇨🇷Costa Rica</label>
+      <input type="submit" value="&#x2714;">
+    </form>
+</div>
+<div id="Fecha_2t5">
+  <form onsubmit="resultado(event)">
+  <p class="Horario">Dom 27/11, 07:00</p>
+    <label>🇯🇵Japon</label>
+    <input type="number" maxlength="2" min="0" id="Count">
+    <input type="number" maxlength="2" min="0" id="Count">
+    <label>🇨🇷Costa Rica</label>
+    <input type="submit" value="&#x2714;">
+  </form>
+  <form onsubmit="resultado(event)">
+  <p class="Horario">Dom 27/11, 16:00</p>
+    <label>🇪🇸España</label>
+    <input type="number" maxlength="2" min="0" id="Count">
+    <input type="number" maxlength="2" min="0" id="Count">
+    <label>🇩🇪Alemania</label>
+    <input type="submit" value="&#x2714;">
+  </form>
+</div>
+<div id="Fecha_3t5">
+  <form onsubmit="resultado(event)">
+  <p class="Horario">Jue 1/12, 16:00/p>
+    <label>🇯🇵Japon</label>
+    <input type="number" maxlength="2" min="0" id="Count">
+    <input type="number" maxlength="2" min="0" id="Count">
+    <label>🇪🇸España</label>
+    <input type="submit" value="&#x2714;">
+  </form>
+  <form onsubmit="resultado(event)">
+  <p class="Horario">Jue 1/12, 16:00</p>
+    <label>🇨🇷Costa Rica</label>
+    <input type="number" maxlength="2" min="0" id="Count">
+    <input type="number" maxlength="2" min="0" id="Count">
+    <label>🇩🇪Alemania</label>
+    <input type="submit" value="&#x2714;">
+  </form>
+</div>
+</div>
+<div class="Grupo_6">
+  <div id="Fecha_1t6">
+  <form onsubmit="resultado(event)">
+    <p class="Horario">Mie 23/11, 07:00</p>
+      <label>🇲🇦Marruecos</label>
+      <input type="number" maxlength="2" min="0" id="Count">
+      <input type="number" maxlength="2" min="0" id="Count">
+      <label>🇭🇷Croacia</label>
+      <input type="submit" value="&#x2714;">
+      </form>
+      <form onsubmit="resultado(event)">
+    <p class="Horario">Mie 23/11, 16:00</p>
+      <label>🇧🇪Bélgica</label>
+      <input type="number" maxlength="2" min="0" id="Count">
+      <input type="number" maxlength="2" min="0" id="Count">
+      <label>🇨🇦Canadá</label>
+      <input type="submit" value="&#x2714;">
+    </form>
+</div>
+<div id="Fecha_2t6">
+  <form onsubmit="resultado(event)">
+  <p class="Horario">Dom 27/11, 10:00</p>
+    <label>🇧🇪Bélgica</label>
+    <input type="number" maxlength="2" min="0" id="Count">
+    <input type="number" maxlength="2" min="0" id="Count">
+    <label>🇲🇦Marruecos</label>
+    <input type="submit" value="&#x2714;">
+  </form>
+  <form onsubmit="resultado(event)">
+  <p class="Horario">Dom 27/11, 13:00</p>
+    <label>🇭🇷Croacia</label>
+    <input type="number" maxlength="2" min="0" id="Count">
+    <input type="number" maxlength="2" min="0" id="Count">
+    <label>🇨🇦Canadá</label>
+    <input type="submit" value="&#x2714;">
+  </form>
+</div>
+<div id="Fecha_3t6">
+  <form onsubmit="resultado(event)">
+  <p class="Horario">Jue 1/12, 12:00/p>
+    <label>🇭🇷Croacia</label>
+    <input type="number" maxlength="2" min="0" id="Count">
+    <input type="number" maxlength="2" min="0" id="Count">
+    <label>🇧🇪Bélgica</label>
+    <input type="submit" value="&#x2714;">
+  </form>
+  <form onsubmit="resultado(event)">
+  <p class="Horario">Jue 1/12, 12:00</p>
+    <label>🇨🇦Canadá</label>
+    <input type="number" maxlength="2" min="0" id="Count">
+    <input type="number" maxlength="2" min="0" id="Count">
+    <label>🇲🇦Marruecos</label>
+    <input type="submit" value="&#x2714;">
+  </form>
+</div>
+</div>
+<div class="Grupo_7">
+  <div id="Fecha_1t7">
+  <form onsubmit="resultado(event)">
+    <p class="Horario">Jue 24/11, 07:00</p>
+      <label>🇨🇭Suiza</label>
+      <input type="number" maxlength="2" min="0" id="Count">
+      <input type="number" maxlength="2" min="0" id="Count">
+      <label>🇨🇲Camerún</label>
+      <input type="submit" value="&#x2714;">
+      </form>
+      <form onsubmit="resultado(event)">
+    <p class="Horario">Jue 24/11, 16:00</p>
+      <label>🇧🇷Brasil</label>
+      <input type="number" maxlength="2" min="0" id="Count">
+      <input type="number" maxlength="2" min="0" id="Count">
+      <label>🇷🇸Serbia</label>
+      <input type="submit" value="&#x2714;">
+    </form>
+</div>
+<div id="Fecha_2t7">
+  <form onsubmit="resultado(event)">
+  <p class="Horario">Lun 28/11, 10:00</p>
+    <label>🇨🇲Camerún</label>
+    <input type="number" maxlength="2" min="0" id="Count">
+    <input type="number" maxlength="2" min="0" id="Count">
+    <label>🇷🇸Serbia</label>
+    <input type="submit" value="&#x2714;">
+  </form>
+  <form onsubmit="resultado(event)">
+  <p class="Horario">Lun 28/11, 16:00</p>
+    <label>🇧🇷Brasil</label>
+    <input type="number" maxlength="2" min="0" id="Count">
+    <input type="number" maxlength="2" min="0" id="Count">
+    <label>🇨🇭Suiza</label>
+    <input type="submit" value="&#x2714;">
+  </form>
+</div>
+<div id="Fecha_3t7">
+  <form onsubmit="resultado(event)">
+  <p class="Horario">Jue 1/12, 12:00</p>
+    <label>🇨🇲Camerún</label>
+    <input type="number" maxlength="2" min="0" id="Count">
+    <input type="number" maxlength="2" min="0" id="Count">
+    <label>🇧🇷Brasil</label>
+    <input type="submit" value="&#x2714;">
+  </form>
+  <form onsubmit="resultado(event)">
+  <p class="Horario">Jue 1/12, 12:00</p>
+    <label>🇷🇸Serbia</label>
+    <input type="number" maxlength="2" min="0" id="Count">
+    <input type="number" maxlength="2" min="0" id="Count">
+    <label>🇨🇭Suiza</label>
+    <input type="submit" value="&#x2714;">
+  </form>
+</div>
+</div>
+<div class="Grupo_8">
+  <div id="Fecha_1t8">
+  <form onsubmit="resultado(event)">
+    <p class="Horario">Jue 24/11, 10:00</p>
+      <label>🇺🇾Uruguay</label>
+      <input type="number" maxlength="2" min="0" id="Count">
+      <input type="number" maxlength="2" min="0" id="Count">
+      <label>🇰🇷Corea del sur</label>
+      <input type="submit" value="&#x2714;">
+      </form>
+      <form onsubmit="resultado(event)">
+    <p class="Horario">Jue 24/11, 13:00</p>
+      <label>🇵🇹Portugal</label>
+      <input type="number" maxlength="2" min="0" id="Count">
+      <input type="number" maxlength="2" min="0" id="Count">
+      <label>🇬🇭Ghana</label>
+      <input type="submit" value="&#x2714;">
+    </form>
+</div>
+<div id="Fecha_2t8">
+  <form onsubmit="resultado(event)">
+  <p class="Horario">Lun 28/11, 10:00</p>
+    <label>🇰🇷Corea del sur</label>
+    <input type="number" maxlength="2" min="0" id="Count">
+    <input type="number" maxlength="2" min="0" id="Count">
+    <label>🇬🇭Ghana</label>
+    <input type="submit" value="&#x2714;">
+  </form>
+  <form onsubmit="resultado(event)">
+  <p class="Horario">Lun 28/11, 16:00</p>
+    <label>🇵🇹Portugal</label>
+    <input type="number" maxlength="2" min="0" id="Count">
+    <input type="number" maxlength="2" min="0" id="Count">
+    <label>🇺🇾Uruguay</label>
+    <input type="submit" value="&#x2714;">
+  </form>
+</div>
+<div id="Fecha_3t8">
+  <form onsubmit="resultado(event)">
+  <p class="Horario">Vie 2/12, 12:00</p>
+    <label>🇰🇷Corea del sur</label>
+    <input type="number" maxlength="2" min="0" id="Count">
+    <input type="number" maxlength="2" min="0" id="Count">
+    <label>🇵🇹Portugal</label>
+    <input type="submit" value="&#x2714;">
+  </form>
+  <form onsubmit="resultado(event)">
+  <p class="Horario">Vie 2/12, 12:00</p>
+    <label>🇬🇭Ghana</label>
+    <input type="number" maxlength="2" min="0" id="Count">
+    <input type="number" maxlength="2" min="0" id="Count">
+    <label>🇺🇾Uruguay</label>
+    <input type="submit" value="&#x2714;">
+  </form>
+</div>
+</div>
+</div>
+<div id"multillave">
+<table >
+<tr>
+  <td class="table-td">ganador1 a <input type="number"></td>
+</tr>
+<tr>
+  <td class="table-td">ganador2 b <input type="number"></td>
+</tr>
+<tr>
+  <td class="table-td">ganador1 c <input type="number"></td>
+</tr>
+<tr>
+  <td class="table-td">ganador2 d <input type="number"></td>
+</tr>
+</table>
+<table id="der">
+<tr>
+  <td class="table-td">ganador2 b<input type="number"> </td>
+</tr>
+<tr>
+  <td class="table-td">ganador1 c<input type="number"></td>
+</tr>
+<tr>
+  <td class="table-td">ganadord 2<input type="number"></td>
+</tr>
+<tr>
+  <td class="table-td">ganadord 2<input type="number"></td>
+</tr>
+</table>
+</div>
+
+  <script type="text/javascript" src="script.js"></script>
+  </body>
 </html>

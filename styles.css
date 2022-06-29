@@ -7,6 +7,12 @@ body{
 background-color: #118C02;
 
 }
+#der {
+  position: relative;
+  left: 1000px;
+  bottom: 214px;
+}
+
 
 #Count {
 width: 50px;
@@ -15,12 +21,16 @@ width: 50px;
 .table-td{
 border:1px solid #000000;
 background-color: grey;
+font-size: 20px;
+padding: 10px;
+
 }
 
 .table{
 border-collapse:collapse;
 border:2px solid #000000;
 position: relative;
-left: 400px;
+left: 700px;
+
 /* bottom: 100px; */
 }
