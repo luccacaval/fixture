@@ -7,6 +7,36 @@ body{
 background-color: #118C02;
 
 }
+.inu{
+  width: 40px;
+}
+#der {
+  position: absolute;
+  left: 950px;
+  bottom: 214px;
+}
+#izq {
+  position: absolute;
+  left: 0px;
+  bottom: 214px;
+}
+
+
+#s1{
+  position:absolute;
+  left: 375px;
+  bottom: 250px;
+}
+#s2{
+  position:absolute;
+  left: 830px;
+  bottom: 430px;
+}
+#fin{
+  position:absolute;
+  left: 550px;
+  bottom: 260px;
+}
 
 #Count {
 width: 50px;
@@ -27,4 +57,12 @@ position: relative;
 left: 700px;
 
 /* bottom: 100px; */
+}
+
+.table-td{
+border:1px solid #000000;
+background-color: grey;
+font-size: 10px;
+padding: 10px;
+
 }

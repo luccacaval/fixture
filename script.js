@@ -193,8 +193,30 @@ function resultado(event) {
     tabla.rows[i_local].cells[8].textContent = parseInt(tabla.rows[i_local].cells[8].textContent) + golesVisitante
   }
   event.target.children[5].hidden = true
-  if()
-
-  }
-
-
+  let primero = 0
+  let segundo = 0
+  let tempo = 0
+  let tempo_i = 0
+  let primero_i = 0
+  let segundo_i = 0
+  if(parseInt(tabla.rows[1].cells[3].textContent) + parseInt(tabla.rows[2].cells[3].textContent) + parseInt(tabla.rows[3].cells[3].textContent) + parseInt(tabla.rows[4].cells[3].textContent) == 12) {
+    for (let i = 1; i <= 4; i++) {
+      if (segundo < parseInt(tabla.rows[i].cells[2].textContent)) {
+        segundo = parseInt(tabla.rows[i].cells[2].textContent)
+        segundo_i = i
+      }
+      if (segundo > primero) {
+        tempo = primero
+        tempo_i = primero_i
+        primero = segundo
+        primero_i = segundo_i
+        segundo = tempo
+        segundo_i = tempo_i
+      }
+    }
+    console.log(primero);
+    console.log(primero_i);
+    console.log(segundo);
+    console.log(segundo_i);
+}
+}
