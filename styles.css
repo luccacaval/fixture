@@ -1,4 +1,5 @@
 .Titulo {
+  font-family: monospace;
   text-align: center;
   font-size: 30px;
 }
@@ -7,12 +8,51 @@ body{
 background-color: #118C02;
 
 }
+.inu{
+  width: 40px;
+}
+#der {
+  font-family:  monospace;
+  position: relative;
+  left: 1000px;
+  bottom: 214px;
+}
+
+
+#s1{
+  font-family:  monospace;
+  position:relative;
+  left: 215px;
+  bottom: 375px;
+}
+#s2{
+  font-family:  monospace;
+  position:relative;
+  left: 830px;
+  bottom: 483px;
+}
+#fin{
+  font-family:  monospace;
+  position:relative;
+  left: 550px;
+  bottom: 570px;
+}
+
+#count{
+  font-family: monospace;
+}
+
+.Horario {
+
+   font-family: monospace;
+}
 
 #Count {
 width: 50px;
 }
 
 .table-td{
+  font-family:  monospace;
 border:1px solid #000000;
 background-color: grey;
 font-size: 20px;
@@ -21,10 +61,13 @@ padding: 10px;
 }
 
 .table{
+  font-family:  monospace;
 border-collapse:collapse;
 border:2px solid #000000;
 position: relative;
 left: 700px;
-
-/* bottom: 100px; */
 }
+.monospace{
+font-family:  monospace;
+}
+
